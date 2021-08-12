@@ -60,19 +60,7 @@
     <div class="md-errors-spacer"></div>
 </md-input-container>
 <!-- end ngIf: flight -->
-<div ng-show="flight" aria-hidden="false" class="">
-    <md-input-container class="md-icon-float md-block md-input-has-placeholder md-input-invalid">
-        <label class="md-required" for="input_0">乘客姓名</label>
-        <input ng-model="user.name" type="text" placeholder="乘客姓名" ng-required="flight" class="ng-pristine md-input ng-empty ng-invalid ng-invalid-required ng-touched" id="input_0" aria-invalid="true" required="required" style="">
-        <div class="md-errors-spacer"></div>
-    </md-input-container>
-</div>
-<md-input-container class="md-icon-float md-block md-input-has-placeholder md-input-has-value">
-    <label class="md-required" for="input_2">手機號碼</label>
-    <input ng-model="user.phone" type="text" placeholder="手機號碼" ng-required="flight" class="ng-pristine md-input ng-empty ng-invalid ng-invalid-required ng-touched" id="input_2" aria-invalid="true" required="required" style="">
-    <div class="md-errors-spacer"></div>
-</md-input-container>
-</div>
+
 <md-input-container class="md-icon-float md-block md-input-has-placeholder md-input-invalid">
     <label class="md-required" for="input_3">上車地點</label>
     <input ng-model="user.getOnPlace" type="text" placeholder="上車地點" ng-required="true" class="ng-pristine md-input ng-empty ng-invalid ng-invalid-required ng-touched" id="input_3" required="required" aria-invalid="true" style="">
@@ -164,7 +152,7 @@
             let waitMinutes=$scope.user.waitMinutes;
             let note=$scope.user.note;
             let text=($scope.flight)?'🌍天空聯盟| Booking Car🌍%0D%0A': '📅皇家預約叫車📅%0D%0A';
-            text+='—————————————';
+            text+='➖➖➖➖➖➖➖➖➖';
             if($scope.flight) {
                 text+='%0D%0A乘客姓名: '+name+'%0D%0A乘車日期: '+rideDate+'%0D%0A乘車時間: '+rideTime+'%0D%0A電話: '+phone+'%0D%0A上車地點: '+getOnPlace+'%0D%0A下車地點: '+getOffPlace;
                 text+='%0D%0A➖➖➖➖➖➖➖➖➖';
